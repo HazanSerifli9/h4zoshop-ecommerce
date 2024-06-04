@@ -1,0 +1,138 @@
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(45deg,
+  #F6FFDE,
+  #E3F2C1,
+  #C9DBB2,
+  #AAC8A7);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-left {
+  flex: 1;
+  padding: 20px;
+}
+
+.new-arrivals {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 100px;
+  color: #333;
+
+
+}
+
+.collections {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 24px;
+
+
+}
+
+.hero-hand-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+
+}
+
+.hero-hand-icon img {
+  width: 24px;
+  height: 24px;
+  
+  margin-right: 5px;
+}
+
+
+.collections-text {
+  font-size: 24px;
+  color: #666;
+  justify-content: space-between;
+}
+
+.hero-text {
+  font-size: 18px;
+  color: #666;
+  margin-top:100px;
+}
+
+.cta-button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #ff4c3b;
+}
+
+.hero-right {
+  flex: 1;
+}
+
+.carousel img {
+  height: 500px; /* Adjust this value based on your design */
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-left {
+    margin-bottom: 20px;
+  }
+
+  .carousel img {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-left {
+    margin-bottom: 20px;
+  }
+  .carousel img {
+    width: 100%;
+  }
+  .cta-button {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 16px;
+  }
+  .collections-text {
+    font-size: 20px;
+  }
+}

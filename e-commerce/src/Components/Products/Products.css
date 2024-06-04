@@ -1,0 +1,122 @@
+.productContainer {
+  display: flex;
+  padding: 0 2rem;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.productsContainer > :nth-child(1) {
+  position: absolute;
+  width: 8rem;
+  left: 30%;
+  top: -3rem;
+}
+
+.products {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 25% auto;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.menu > li:hover {
+  color: var(--pink);
+  cursor: pointer;
+}
+
+.left-s {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+}
+
+.name > :nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.name > :nth-child(2) {
+  font-size: 0.7rem;
+}
+
+.left-s > :nth-child(2) {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.left-s > :nth-child(3) {
+  font-size: 0.6rem;
+  border: 1px solid var(--black);
+  padding: 5px 10px;
+  width: max-content;
+  border-radius: 15px;
+}
+
+.img-p {
+  transform: rotate(-20deg);
+  position: absolute;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  bottom: -20%;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  height: 25rem;
+  overflow-y: scroll;
+  grid-gap: 2rem;
+  justify-content: space-between;
+}
+
+.product {
+  width: 150px;
+  height: 200px;
+  background-color: wheat;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+.product > img {
+  width: 30%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+@media (max-width: 768px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .productsContainer > :nth-child(1) {
+    left: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    font-size: 1rem;
+  }
+}

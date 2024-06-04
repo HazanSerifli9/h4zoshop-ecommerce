@@ -1,0 +1,98 @@
+.test{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.wrapper-test{
+    display: grid;
+    align-items: flex-end;
+    width: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.wrapper-test> img {
+ width: 25rem;
+ justify-self:center ;
+}
+
+.testContainer{
+    display: flex;
+    flex-direction: column;
+ gap:1rem;
+}
+
+.testContainer> :nth-child(1){
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+}
+
+.testContainer> :nth-child(2){
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    display: block;
+}
+
+.wrapper-test> :nth-child(3){
+  
+    text-align: right;
+    
+}
+
+.reviews{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.testcarousel{
+width: 100%;
+}
+
+.tCarousel {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.testimonial {
+    flex: 0 0 auto;
+    margin-right: 1rem;
+    position: relative;
+    padding-top: 2rem;
+    background: bisque;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    box-shadow: 0rem 1rem 3rem -50px #7d7d7d;
+}
+
+.testimonial>img {
+    position: absolute; 
+    width: 3rem;
+    top: -1.5rem;
+    left: 45%;
+}
+
+.testimonial>span:nth-of-type(1) {
+    align-items: center;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+}
+
+.testimonial>hr {
+    height: 1px;
+    width: 80%;
+    background: rgb(198,198,198);
+    border: none;
+}
+
+.testimonial>span:nth-of-type(2) {
+    font-weight: 500;
+}
