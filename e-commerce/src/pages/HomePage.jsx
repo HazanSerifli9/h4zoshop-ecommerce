@@ -1,10 +1,10 @@
 import React from "react";
-import NavBar from "../Component/HomePage/Navbar";
-import Header from "../Component/Header/Header";
-import Footer from "../Component/HomePage/Footer";
-import Hero from "../Component/Hero/Hero";
-import Products from "../Component/Products/Products";
-import Testimonials from "../Component/Testimonials/Test";
+import NavBar from "../Components/HomePage/Navbar";
+import Header from "../Components/Header/Header";
+import Hero from "../Components/Hero/Hero";
+import Products from "../Components/Products/Products";
+import Testimonials from "../Components/Testimonials/Test";
+import Footer from "../Components/HomePage/Footer";
 
 export default function HomePage() {
   return (

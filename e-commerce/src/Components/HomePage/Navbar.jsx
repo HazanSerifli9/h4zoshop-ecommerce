@@ -8,7 +8,7 @@ import {
   FaUser,
   FaHome,
 } from "react-icons/fa";
-import "../../Styles/Navbar.css";
+import "../../styles/Navbar.css";
 
 const Navbar = () => {
   const [nightMode, setNightMode] = useState(false);

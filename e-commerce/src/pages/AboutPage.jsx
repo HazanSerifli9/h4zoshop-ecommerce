@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../src/Styles/About.css";
-import Navbar from "../Component/HomePage/Navbar";
-import Footer from "../Component/HomePage/Footer";
+import Navbar from "../Components/HomePage/Navbar";
+import Footer from "../Components/HomePage/Footer";
 import missionImage from "../assets/mission-vision-values-icon-design-set_122317-19.avif";
+import "../styles/About.css";
 
 const AboutUs = () => {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
-import "../Styles/Login.css";
+import "../styles/Login.css";
 import { useState } from "react";
 import { FaGoogle, FaFacebook, FaTwitter, FaGithub } from "react-icons/fa";
-import Navbar from "../Component/HomePage/Navbar";
-import Footer from "../Component/HomePage/Footer";
+import Navbar from "../Components/HomePage/Navbar";
+import Footer from "../Components/HomePage/Footer";
 
 const LoginSignUp = () => {
   const [action, setAction] = useState("Sign Up");

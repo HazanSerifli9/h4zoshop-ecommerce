@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import logo from "../../assets/Screenshot 2024-05-24 at 17.49.04.png";
-import "../../Styles/Footer.css";
+import "../../styles/Footer.css";
 
 const Footer = () => {
   return (

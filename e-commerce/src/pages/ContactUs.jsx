@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "../Styles/Contact.css";
-import Navbar from "../Component/HomePage/Navbar";
-import Footer from "../Component/HomePage/Footer";
+import "../styles/Contact.css";
+import Navbar from "../Components/HomePage/Navbar";
+import Footer from "../Components/HomePage/Footer";
 import {
   AiOutlineMail,
   AiOutlinePhone,
